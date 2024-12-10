@@ -1,16 +1,22 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule, provideClientHydration } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
+import { FormComponent } from "./form/form.component";
+import { ListComponent } from "./list/list.component";
+import { HeaderComponent } from "./header/header.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormComponent,
+    ListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule
   ],
   providers: [
     provideClientHydration()

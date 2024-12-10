@@ -1,0 +1,7 @@
+  <div *ngFor="let task of taskService.task; let i = index">
+    <h1>{{ task.description }}</h1>
+    <button (click)="changeState(i)">
+      {{ task.complete ? "Realizado" : "Pendiente" }}
+    </button>
+  </div>
+  
